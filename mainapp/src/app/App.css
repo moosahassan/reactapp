@@ -22,3 +22,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*small screen only*/
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #weather { display: none; }  /* hide it on small screens */
+  #sidebar { display: none; }
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  #weather { display: block; }   /* show elsewhere */
+  #sidebar { display: block; }
+}
